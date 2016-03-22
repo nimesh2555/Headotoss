@@ -11,7 +11,7 @@ $(document).ready(function fetchGameResult(data) {
             dataType: "json",
             contentType: "Application/Json",
             data: JSON.stringify({
-                "call": "head_s"
+                "call": "heads"
             }),
             success: function(data) {
                 console.log(data.result);
@@ -33,7 +33,7 @@ $(document).ready(function fetchGameResult(data) {
             dataType: "json",
             contentType: "Application/Json",
             data: JSON.stringify({
-                "call": "tail_s"
+                "call": "tails"
             }),
             success: function(data) {
                 console.log(data.result);
