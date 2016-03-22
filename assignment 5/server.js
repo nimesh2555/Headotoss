@@ -23,7 +23,7 @@ app.post('/Flip', function(request, response) {
     var x = (Math.random() * 1) + 0;
     console.log(x);
     if (x >= 0.5) {
-        if ((request.body.call == "head_s")) {
+        if ((request.body.call == "heads")) {
             console.log("win head");
             response.send(JSON.stringify({
                 "result": "win"
@@ -39,7 +39,7 @@ app.post('/Flip', function(request, response) {
             console.log(l);
         }
     } else {
-        if ((request.body.call == "tail_s")) {
+        if ((request.body.call == "tails")) {
             response.send(JSON.stringify({
                 "result": "win"
             }));
